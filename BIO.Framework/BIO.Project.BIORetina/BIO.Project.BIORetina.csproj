@@ -59,7 +59,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RetinaDatabaseCreator.cs" />
+    <Compile Include="RetinaEvaluationSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
@@ -82,6 +85,32 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BIO.Framework.Extensions.Emgu\BIO.Framework.Extensions.Emgu.csproj">
+      <Project>{57CC9045-0B40-4644-9309-DD3441D8220E}</Project>
+      <Name>BIO.Framework.Extensions.Emgu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIO.Framework.Extensions.ZedGraph\BIO.Framework.Extensions.ZedGraph.csproj">
+      <Project>{3A51CE79-DDD3-493C-A11A-8677E2657EF6}</Project>
+      <Name>BIO.Framework.Extensions.ZedGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIO.Framework.Utils.Console\BIO.Framework.Utils.Console.csproj">
+      <Project>{CC746032-3A59-4201-AF01-8DAC89192053}</Project>
+      <Name>BIO.Framework.Utils.Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIO.Framework.Utils.UI\BIO.Framework.Utils.UI.csproj">
+      <Project>{E51816EF-5C73-455F-B42F-4D616A2CD0F8}</Project>
+      <Name>BIO.Framework.Utils.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIO.Framework\BIO.Framework.csproj">
+      <Project>{B51EA0A6-B2B0-4D65-911F-C21BA2AA8CB1}</Project>
+      <Name>BIO.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIO.Project\BIO.Project.csproj">
+      <Project>{0DA82CBC-69C7-41B9-B3FD-285DF1B68E72}</Project>
+      <Name>BIO.Project</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

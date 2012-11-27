@@ -21,7 +21,7 @@ namespace BIO.Project.Example1 {
         #endregion
 
         public override Framework.Core.Database.IDatabaseCreator<StandardRecord<StandardRecordData>> getDatabaseCreator() {
-            return new FaceDatabaseCreator(@"d:\db\face\2D\JAFFE");
+            return new FaceDatabaseCreator(@"C:\Users\tom\Downloads\JAFFE");
         }
 
         protected override Framework.Core.Evaluation.Block.IBlockEvaluatorSettings<StandardRecord<StandardRecordData>, EmguGrayImageInputData> getEvaluatorSettings() {

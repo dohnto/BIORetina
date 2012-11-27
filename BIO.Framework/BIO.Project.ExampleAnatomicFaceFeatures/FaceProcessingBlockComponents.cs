@@ -42,6 +42,5 @@ namespace BIO.Project.Example3DFaceRecognition {
         private static IScoreSelector CreateScoreSelector() {
             return new MinScoreSelector();
         }
-
     }
 }

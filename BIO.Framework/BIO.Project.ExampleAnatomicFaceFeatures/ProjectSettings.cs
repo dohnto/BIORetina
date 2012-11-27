@@ -6,6 +6,7 @@ using BIO.Framework.Extensions.Standard.Database.InputDatabase;
 using BIO.Framework.Extensions.Emgu.InputData;
 
 namespace BIO.Project.Example3DFaceRecognition {
+    
     class ProjectSettings :
         BIO.Project.ProjectSettings<StandardRecord<StandardRecordData>, EmguGrayImageInputData>,
         IStandardProjectSettings<StandardRecord<StandardRecordData>> {
