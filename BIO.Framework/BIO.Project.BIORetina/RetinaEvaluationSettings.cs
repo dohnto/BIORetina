@@ -19,15 +19,13 @@ namespace BIO.Project.BIORetina
         public RetinaEvaluationSettings() 
         {
             {
-                //var value = new FaceProcessingBlockComponents();
-                //this.addBlockToEvaluation(value.createBlock());
+                var value = new RetinaProcessingBlockComponents();
+                this.addBlockToEvaluation(value.createBlock());
             }
         }
 
         protected override Framework.Core.InputData.IInputDataCreator<StandardRecord<StandardRecordData>, EmguGrayImageInputData> createInputDataCreator() {
-            //return new FaceInputDataCreator();
-            return null;
+            return new RetinaInputDataCreator();
         }
-
     }
 }
