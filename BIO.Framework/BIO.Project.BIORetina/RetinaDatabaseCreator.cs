@@ -29,9 +29,9 @@ namespace BIO.Project.BIORetina
             }
 
             var files = di.GetFiles("*.pgm");
-
             foreach (var f in files)
-            {   
+            {
+                Console.WriteLine(f);
                 var parts = f.Name.Split(new[] { '.' }, StringSplitOptions.RemoveEmptyEntries);
                 
                 string id = parts[0];
