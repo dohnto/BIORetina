@@ -12,13 +12,13 @@ using Emgu.CV.Structure;
 namespace BIO.Framework.Extensions.Emgu.FeatureVector {
     [Serializable]
     public class EmguMatrixFeatureVector : BIO.Framework.Core.FeatureVector.IFeatureVector {
-        private Matrix<Double> featureVector;
-        public Matrix<Double> FeatureVector {
+        private Matrix<Byte> featureVector;
+        public Matrix<Byte> FeatureVector {
             get { return featureVector; }
         }
 
         public EmguMatrixFeatureVector(Size featureVectorSize) {
-            featureVector = new Matrix<double>(featureVectorSize);
+            featureVector = new Matrix<Byte>(featureVectorSize);
         }
     }
 }

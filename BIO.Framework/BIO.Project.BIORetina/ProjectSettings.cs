@@ -17,7 +17,7 @@ namespace BIO.Project.BIORetina
 
         public override Framework.Core.Database.IDatabaseCreator<StandardRecord<StandardRecordData>> getDatabaseCreator()
         {
-            return new RetinaDatabaseCreator(@"C:\Users\tom\Skola\bio\BIORetina\datasets\VARIA-10");
+            return new RetinaDatabaseCreator(@"C:\Users\tom\Skola\bio\BIORetina\datasets\VARIA");
         }
 
         protected override Framework.Core.Evaluation.Block.IBlockEvaluatorSettings<StandardRecord<StandardRecordData>, EmguGrayImageInputData> getEvaluatorSettings()
