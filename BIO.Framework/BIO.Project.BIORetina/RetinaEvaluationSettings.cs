@@ -21,6 +21,17 @@ namespace BIO.Project.BIORetina
             {
                 var value = new RetinaProcessingBlockComponents();
                 this.addBlockToEvaluation(value.createBlock());
+
+                var value1 = new RetinaProcessingBlockComponents2();
+                this.addBlockToEvaluation(value1.createBlock());
+
+
+                var value2 = new RetinaProcessingBlockComponents3();
+                this.addBlockToEvaluation(value2.createBlock());
+
+
+                var value3 = new RetinaProcessingBlockComponents4();
+                this.addBlockToEvaluation(value3.createBlock());
             }
         }
 
